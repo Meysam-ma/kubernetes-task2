@@ -249,3 +249,9 @@ Expected: ✅ Success
 kubectl --context=test-context get pods -n test
 ```
 Expected: ❌ Forbidden
+
+---
+
+# Successful Run Screenshot
+
+![successful_run](screenshot/successful_run.png)
