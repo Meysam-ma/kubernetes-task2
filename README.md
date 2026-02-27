@@ -148,6 +148,7 @@ roleRef:
 ## 4️⃣ External User Access Restriction
 
 External user test is restricted to nginx namespace only.
+
 Role
 ```yaml
 apiVersion: rbac.authorization.k8s.io/v1
