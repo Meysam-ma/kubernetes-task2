@@ -1,0 +1,26 @@
+# Create Role for Pods in nginx namespace
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: nginx-pod-access
+  namespace: nginx
+rules:
+- apiGroups: [""]
+  resources: ["pods"]
+  verbs: ["get", "list"]
+---
+# Bind Role to external user 'test'
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: nginx-pod-access-binding
+  namespace: nginx
+subjects:
+- kind: User
+  name: test
+  apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: Role
+  name: nginx-pod-access
+  apiGroup: rbac.authorization.k8s.io
+
