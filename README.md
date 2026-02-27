@@ -40,11 +40,16 @@ The goal is to showcase practical RBAC design and verification techniques in a r
 
 ## 📂 Repository Structure
 ```
-├── namespaces
+├── namespaces.yaml
 ├── pods.yaml
 ├── rbac-cross-namespace.yaml
 ├── user-rbac.yaml
-└── README.md
+├── test.crt
+├── test.csr
+├── test.key
+├── README.md
+└── screenshot
+      └── successful_run.png
 ```
 
 ---
