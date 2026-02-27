@@ -39,13 +39,13 @@ The goal is to showcase practical RBAC design and verification techniques in a r
 ---
 
 ## 📂 Repository Structure
-
-├── namespaces.yaml
+```
+├── namespaces
 ├── pods.yaml
 ├── rbac-cross-namespace.yaml
 ├── user-rbac.yaml
 └── README.md
-
+```
 
 ---
 
